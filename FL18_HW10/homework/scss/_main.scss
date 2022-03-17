@@ -1,0 +1,256 @@
+
+
+@mixin forButton {
+  font-family: $fontFamilyTitle;
+  font-weight: 600;
+  background-color: $buttonColor;
+  border: 1px solid $buttonBorderColor;
+  border-radius: 1px;
+  font-size: 8px;
+  color: white;
+  width: 70px;
+  height: 24px;
+}
+
+
+@mixin selectorLinks {
+  font-size: 7px;
+  color: rgb(192, 195, 206);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  background-color: $pageBackgroundColor;
+}
+
+.highlightedWords{
+  background-color: $selectionBGcolor;
+}
+
+header {
+  background-image: $headerBackgroundImage;
+  background-size: cover;
+  background-position: center;
+  font-family: $fontFamilyMain;
+  color: $headerTextColor;
+  border-bottom-right-radius: 22em 9em;
+}
+
+main {
+  font-family: $fontFamilyTitle;
+}
+
+
+
+.landing-logo{
+  display: flex;
+  line-height: 11px;
+  p {
+     span{
+      text-align: center;
+      display: block;
+      font-size: 5px;
+     }
+  }
+}
+.landing-logo{
+  p {
+    margin-left: 8px;
+    font-size: 10px;
+    font-weight: 800;
+  }
+  img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+
+.header-wrap{
+  padding: $headerMargin;
+}
+
+.header_heading{
+  font-size: 30px;
+  font-family: $fontFamilyTitle;
+  font-weight: bolder;
+  margin-top: 40px;
+  width: 300px;
+  line-height: 30px;
+}
+
+.header_text{
+  padding-top: 20px;
+  font-size: 7px;
+  white-space: pre-line;
+  padding-left: 0;
+}
+
+.header_button{
+  margin-top: 30px;
+  @include forButton;
+}
+
+.login{
+  color: white;
+  font-size: 10px;
+  padding-left: 60px;
+}
+
+.section{
+  font-family: $fontFamilyTitle;
+  margin-bottom: 35px;
+}
+
+.section_text{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $sectionTextColor;
+}
+
+.section_card{
+  @extend .footer;
+  margin-top: 15px;
+  width: 485px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 50px 10px 10px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.section_card::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.section_card_right_container{
+  text-align: bottom;
+  position: relative;
+}
+
+.section_card_heading{
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.section_card_text{
+  margin-top: 5%;
+  display: flex;
+  font-family: $fontFamilyTitle;
+  line-height: 14px;
+  text-align: justify;
+  align-items: center;
+  font-size: 8px;
+  color: rgb(194, 194, 194);
+}
+
+.section_link{
+  @include selectorLinks;
+}
+
+.section_card_wrap{
+  :nth-child(1){
+    img{
+      height: map-get($img-sizes, "normal");
+      width: auto;
+      border-radius: 3px;
+      padding-right: 40px;
+    }
+  }
+  :nth-child(2){
+    img{
+      height: map-get($img-sizes, "small");
+      width: auto;
+      border-radius: 3px;
+      padding-right: 40px;
+    }
+  }
+  :nth-child(3){
+    img{
+      height: map-get($img-sizes, "large");
+      width: auto;
+      border-radius: 3px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.section_banner{
+  position: relative;
+  display: flex;
+  top: 73px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 590px;
+  background: $sectionBannerGradient;
+  border-radius: 5px;
+}
+
+.section_banner_text_wrap{
+  font-size: 14px;
+  color: $sectionTextColor;
+  margin-right: 100px;
+}
+
+.section_banner_button{
+  @include forButton;
+  margin: auto;
+}
+
+.section_banner_heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 20px;
+  margin-left: 70px;
+  
+}
+
+.section_banner_text{
+  font-family: $fontFamilyText;
+  font-size: 7px;
+  margin-left: 70px;
+  color: rgb(192, 195, 206);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.footer{
+  font-family: $fontFamilyText;
+  background-color: $sectionCardColor;
+}
+
+.footer-wrap{
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(192, 195, 206);
+  font-size: 6.5px;
+  padding-bottom: 30px;
+}
+
+.footer_text{
+  width: 140px;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+

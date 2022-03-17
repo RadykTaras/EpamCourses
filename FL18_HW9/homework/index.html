@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 9 - JS DOM Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="task1">
+    <table id="table">
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Special Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="task2">
+    <div id="validationText">
+      <p>The number does not follow format<br>+380*********</p>
+    </div>
+    <div id="phoneContainer">
+      <input id="inputPhoneNumber">
+      <button id="inputBtn" disabled>Sent</button>
+    </div>
+  </div>
+
+  <div id="task3">
+    <div id='stadium'>
+      <img alt="court" src="assets/court.png" id="court" usemap="#hoop">
+      <img alt="ball" src="assets/ball.png" id="ball">
+    </div>
+    <div id="tablo">
+      <p id="teamA">Team A:<span id="teamBScore">0</span></p>
+      <p id="teamB">Team B:<span id="teamAScore">0</span></p>
+    </div>
+    <div>
+      <p id="goalMassege"></p>
+    </div>
+    <map name="hoop" id="hoop">
+      <area shape="rect" coords="30,155,45,170" alt="teamAhoop">
+      <area shape="rect" coords="555,155,570,170" alt="teamBhoop">
+    </map>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

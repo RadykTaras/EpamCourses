@@ -1,0 +1,599 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  position: relative;
+  height: max-content;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header_navigation{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  background-color: #FFF;
+  align-items: center;
+}
+
+.header_navigation_menu > ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.header_navigation_logo{
+  position: fixed;
+  top: 10px;
+  left: 80px;
+}
+
+.header_navigation_logoimg{
+  width: 30px;
+  height: 30px;
+}
+
+.header_navigation_menu{
+  position: fixed;
+  display: flex;
+  right: 80px;
+}
+
+.header_navigation_menu_link{
+  text-decoration: none;
+  color: #000;
+  font-size: 12px; 
+  font-weight: 600;
+  padding: 1px 5px;
+}
+
+.header_navigation_menu_link:hover{
+  color: #0078aa;
+}
+
+.header_section{
+  background-image: url(../img/lady.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  position: relative;
+  height: 600px;
+}
+
+.header_section_content{
+  position: absolute;
+  top: 35%;
+  left: 140px;
+  width: 40%;
+}
+
+.header_section_content_header-text{
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.header_section_content_text{
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.header_section_content_icon{
+  font-size: 30px;
+  height: auto;
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 12px;
+  margin-right: 15px;
+}
+
+.get-up_button{
+  text-decoration: none;
+  position: fixed;
+  font-size: 40px;
+  width: 50px;
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 5px;
+  bottom: 5px;
+  right: 20px;
+  text-align: center;
+}
+
+.get-up_button:hover{
+  background-color: #FFF;
+  color: #0078aa;
+}
+
+.header_section_content_icon:hover{
+  background-color: #FFF;
+  color: #0078aa;
+}
+
+.section_info-about{
+  margin: 60px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section_info-about_img-container{
+  width: 50%;
+  height: auto;
+}
+
+.section_info-about_img{
+  width: 100%;
+  height: auto;
+}
+
+.section_info-about_content{
+  width: 45%;
+  margin-left:2%;
+}
+
+.section_info-about_content_header-text{
+  font-size: 35px;
+}
+
+.section_info-about_content_text{
+  color: #0078aa;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.arrow-symbol{
+  color: #0078aa;
+  margin-right: 10px;
+}
+
+.section_info-about_content_article_header-text{
+  margin-top: 10px;
+}
+
+.section_info-about_content_article_text{
+  margin-top: 5px;
+  font-size: 12px;
+  width: 65%;
+}
+
+.section_services{
+  width: 100%;
+  background-image: url(../img/services_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 100%;
+  padding-bottom: 40px;
+  background-position: 50% 50%;
+}
+
+.section_services_header-text{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.section_services_text{
+  font-size: 12px;
+  margin-top: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.section_services_wrapper{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_services_container{
+  text-align: left;
+  background-color: #FFF;
+  width: 22%;
+  margin: 10px;
+  padding: 25px;
+}
+
+.section_services_container_content-header{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.section_services_container_content-text{
+  margin-top: 15px;
+}
+
+.section_offers{
+  width: 100%;
+  background-image: url(../img/pricing_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 40px; 
+  height: max-content;
+}
+
+.section_offers_wreeper{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_offers_header-text{
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.section_offers_text{
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  font-size: 10px;
+  justify-content: center;
+}
+
+.section_offers_lateral{
+  width: 22%;
+  background-color: rgb(71 201 229);
+  padding: 30px 20px 20px 20px;
+  color: #FFF;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.section_offers_middle{
+  width: 20%;
+  background-color: #FFF;
+  padding: 60px 20px 40px 20px;
+  color: #0078aa;
+  border: 1px solid #0078aa;
+  margin-top: 30px;
+}
+
+.section_offers_lateral_header{
+  margin-bottom: 10px;
+}
+
+.section_offers_middle_header{
+  margin-bottom: 10px;
+}
+
+.section_offers_lateral_price{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section_offers_middle_price{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section_offers_lateral_text{
+  font-style: italic;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.section_offers_middle_text{
+  font-style: italic;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.section_offers_lateral_list_elm{
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.section_offers_middle_list_elm{
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.section_offers_lateral_list{
+  padding: 0;
+  line-height: 40px;
+}
+
+.section_offers_middle_list{
+  padding: 0;
+  line-height: 40px;
+}
+
+.section_offers_button{
+  padding: 10px 20px;
+  border: 2px solid #0078aa;
+  border-radius: 10px;
+  color: #0078aa;
+  font-weight: 800;
+  background-color: #FFF;
+}
+
+.section_offers_button:hover{
+  color: #FFF;
+  background-color: #0078aa;
+}
+
+.section_appointment{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section_appointment_img-wraper{
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+.section_appointment_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.section_appointment_content{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.section_appointment_content_header-text{
+  font-size: 30px;
+}
+
+.section_appointment_content_text{
+  margin-top: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.section_appointment_form_content_input{
+  font-style: italic;
+  margin-top: 10px;
+  padding: 10px 2px 2px 2px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.section_appointment_form_content_button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 35px;
+  background-color: #0078aa;
+  border: 1px solid #0078aa;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.section_appointment_form_content_button:hover{
+  background-color: #FFF;
+  color: #0078aa;
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(54 54 54);
+}
+
+.footer_copyright-text{
+  color: #FFF;
+}
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1279px)
+{
+  .header_navigation_logo{
+    left: 20px;
+  }
+  
+  .header_navigation_menu{
+    right: 20px;
+  }
+  
+  .header_section{
+    background-position: 40%;
+  }
+  
+  .header_section_content{
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    width: 70%;
+  }
+  
+  .section_appointment_content{
+    margin-left: 20px;
+  }
+  
+  .section_appointment_img-wraper{
+    width: 50%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .section_appointment_img{
+    object-fit: cover;
+    object-position: 0 0;
+  }
+}
+
+@media only screen
+and (max-width : 767px)
+ {
+  header{
+    padding-top: 80px;
+  }
+  
+  .header_navigation{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+  
+  .header_navigation_logo{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+  }
+  
+  .header_navigation_logoimg{
+    width: 0;
+    height: 30px;
+  }
+  
+  .header_navigation_menu{
+    position: relative;
+    display: flex;
+    right: 0;
+  }
+  
+  .header_navigation_menu{
+    right: 0;
+  }
+  
+  .header_section{
+    background-position: 23%;
+    width: 100%;
+    height: 420px;
+  }
+  
+  .header_section_content{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+  }
+  
+  .header_section_content_icon{
+    margin: 0;
+  }
+  
+  .midle-icon{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  
+  .section_info-about{
+    margin: 30px 0px;
+    flex-direction: column;
+  }
+  
+  .section_info-about_img-container{
+    width: 100%;
+    height: auto;
+  }
+  
+  .section_info-about_content{
+    width: 100%;
+    margin-left:2%;
+    margin-right:2%;
+    text-align: center;
+  }
+  
+  .arrow-symbol{
+    color: #0078aa;
+    margin-right: 10px;
+  }
+  
+  .section_info-about_content_article_text{
+    text-align: center;
+    width: 100%;
+  }
+  
+  .section_services_container{
+    width: 100%;
+  }
+  
+  .section_offers{
+    background-image: none;
+    justify-content: center;
+  }
+  
+  .section_offers_wreeper{
+    flex-flow: column;
+    width: 90%;
+    align-items: center;
+  }
+  
+  .section_offers_lateral{
+    width: 90%;
+    margin: 10px;
+  }
+  
+  .section_offers_middle{
+    width: 90%;
+    margin: 10px;
+  }
+  
+  .section_appointment_img-wraper{
+    width: 100%;
+  }
+  
+  .section_appointment_content{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin-right: 40px;
+    width: 100%;
+  }
+  
+  .header_section_content_text > br{
+    display: none;
+  }
+}
